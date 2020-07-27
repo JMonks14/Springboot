@@ -1,0 +1,28 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+@RestController
+public class control1 {
+
+	@RequestMapping(value="/Chelsea", method=RequestMethod.GET)
+	public String chelsea() {
+		return "Blue is the colour";
+	}
+	
+	@RequestMapping(value="/Chelsea", method=RequestMethod.POST)
+	public String chelsea2() {
+		return "Blue is the colour";
+	}
+	
+	@RequestMapping(value="/Chelsea", method=RequestMethod.DELETE)
+	public String chelsea3() {
+		return "Blue is the colour";
+	}
+	
+	@RequestMapping(value="/Fulham")
+	public String fulham() {
+		return "Come on you whites";
+	}
+}

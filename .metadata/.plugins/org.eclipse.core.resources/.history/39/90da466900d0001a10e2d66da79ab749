@@ -1,0 +1,16 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class control1 {
+
+	@RequestMapping(value="/Chelsea")
+	public String chelsea() {
+		return "Blue is the colour";
+	}
+	
+	@RequestMapping(value="/Fulham")
+	public String fulham() {
+		return "Come on you whites";
+	}
+}
