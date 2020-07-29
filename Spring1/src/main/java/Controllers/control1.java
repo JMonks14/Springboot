@@ -1,13 +1,18 @@
-package com.example.demo;
+package Controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import utilities.Maths;
 @RestController
 public class control1 {
+//	@Autowired
+
 	
-	@RequestMapping(value="/", method=RequestMethod.GET)
+	@RequestMapping(value="/")
 	public String home() {
 		return "welcome to the home page";
 	}
@@ -37,20 +42,9 @@ public class control1 {
 		
 	}
 	
-	@RequestMapping(value="maths/{op}/{a}/{b}", method=RequestMethod.GET)
-	public String calc(@PathVariable(value="op") String op, @PathVariable(value="a") int a, @PathVariable(value="b") int b) {
-		Maths ref = new Maths();
-		switch (op) {
-		case "add":
-			return "the answer is " + ref.add(a, b);
-		case "sub":
-			return "the answer is " + ref.sub(a, b);
-		case "mul":
-			return "the answer is " + ref.mul(a, b);
-		case "div":
-			return "the answer is " + ref.div(a, b);
-		default:
-			return "invalid operation";
-		}
-	}
+//	@RequestMapping(value="tax/{salary}", method=RequestMethod.GET)
+//	public float teamMsg(@PathVariable int salary) {
+//		return maths.salaryAfterTax(salary);
+//	}
+	
 }

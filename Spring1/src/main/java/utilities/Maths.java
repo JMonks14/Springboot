@@ -1,5 +1,8 @@
-package com.example.demo;
+package utilities;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Maths {
 	
 	public int add(int a, int b) {
@@ -16,6 +19,10 @@ public class Maths {
 	
 	public int div(int a, int b) {
 		return a/b;
+	}
+	
+	public float salaryAfterTax(int salary) {
+		return ((float) salary)*0.8f;
 	}
 
 }
