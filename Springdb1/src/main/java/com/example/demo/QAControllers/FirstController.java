@@ -17,9 +17,9 @@ public class FirstController {
 	public String RecordSave() {
 		
 		Student ref = new Student();
-		ref.setRegno(12);
-		ref.setName("Shafeeq");
-		ref.setAddress("Manchester");
+		ref.setRegno(13);
+		ref.setName("Shafeeq2");
+		ref.setAddress("Manchester2");
 		
 		repo.save(ref);
 		

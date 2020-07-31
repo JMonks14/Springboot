@@ -8,5 +8,8 @@ import com.example.demo.Model.Sale;
 
 @Repository
 public interface SalesRepo extends JpaRepository<Sale, Integer>{
+	
+	@Query(Value = "Select max(quantity) from Tesco", nativeQuery=true)
+	public int maxMarks
 
 }

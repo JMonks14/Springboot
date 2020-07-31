@@ -17,11 +17,8 @@ public class SaleService {
 	@Autowired
 	SalesRepo salesRepo;
 	
-	public void storeRecord(String name, int quantity) {
-		Sale S = new Sale();
-		S.setProduct_name(name);
-		S.setQuantity(quantity);
-		salesRepo.save(S);
+	public void storeRecord(Sale sale) {
+		salesRepo.save(sale);
 		
 	}
 	

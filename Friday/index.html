@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+    <br><br><br>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-secondary">Enter Record</button>
+
+          </div>
+          <div class="col">
+            <form id="getinfo">
+                <div class="form-group">
+                    <label for="optionselect">What would you like to view:</label>
+                    <select class="form-control" id="optionselect">
+                      <option>Consultants with below average salary</option>
+                      <option>Consultant(s) with highest marks</option>
+                      <option id="3">Consultant(s) with highest salary</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="clientselect">For which client:</label>
+                    <select class="form-control" id="clientselect">
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="w-100"></div>
+          <div class="col">
+              <br><br>
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th scope="col">Clients</th>
+                  </tr>
+                </thead>
+                <tbody id="clients">
+                </tbody>
+            </table>
+            </div>
+                  <div class="col">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                          <th scope="col">Technologies</th>
+                        </tr>
+                      </thead>
+                      <tbody id="techs">
+                      </tbody>
+                  </table>
+                  </div>
+                </div>
+            </div>
+              
+              
+        </div>
+          <div class="col">
+              <br><br>
+            <table class="table">
+                <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Address</th>
+                  <th scope="col">Technology</th>
+                  <th scope="col">Client</th>
+                  <th scope="col">Salary</th>
+                  <th scope="col">Marks</th>
+                </tr>
+              </thead>
+              <tbody id="trainees">
+              </tbody>
+          </table>
+
+          </div>
+        </div>
+      </div>
+    
+
+      <script src="consultants.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
